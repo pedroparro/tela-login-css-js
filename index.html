@@ -1,0 +1,86 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA DE LOGIN CSS - JAVASCRIPT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <!--header-->
+    <header id="subheader">Sistema de Cadastro<span> Pedro Parro</span></header>
+    <!--msg-->
+    <div id="mensagem"></div>
+    <!--main-->
+    <main>
+        <!--form acesse sua conta-->
+        <div id="formulario"> 
+            <form id="formularioLogin">
+                    <span class="title">Acesse sua conta</span>
+                <!--E-MAIL-->
+                <div id="linha">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" maxlength="30" >
+                </div>
+                <!--SENHA-->
+                <div id="linha">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" maxlength="15" >
+                </div>
+                <!--BUTTON ENTRAR-->
+                <div id="button">
+                    <button id="btnEntrar">Entrar</button>
+                </div>
+
+            </form>
+
+            <!--form crie sua conta-->
+            <form id="formularioCadastro">
+                        <span class="title">Crie sua conta</span>
+                    <!--LINHA - NOME-->
+                    <div id="linha">
+                        <label for="nomeCadastro">Nome</label>
+                        <input type="text" name="nomeCadastro" id="nomeCadastro" >
+                    </div>
+                    <!--LINHA - E-MAIL-->
+                    <div id="linha">
+                        <label for="emailCadastro">E-mail</label>
+                        <input type="text" name="emailCadastro" id="emailCadastro" >
+                    </div>
+                    <!--LINHA - SENHA-->
+                    <div id="linha">
+                        <label for="senhaCadastro">Senha</label>
+                        <input type="password" name="senhaCadastro" id="senhaCadastro" >
+                    </div>
+                    <!--BUTTON CADASTRO-->
+                    <div id="button">
+                        <button id="btnCadastrar">Cadastrar</button>
+                    </div>
+            </form>
+
+            <!--BUTTON CADASTRAR-->
+            <div id="textoCadastro">
+                <span class="title">Não possui uma conta ?</span>
+                <span class="subtitle">Crie uma conta agora !</span>
+                <button id="btnCadastro" class="change">Cadastrar</button>
+            </div>
+
+            <!--BUTTON LOGIN-->
+            <div id="textoLogin">
+                <span class="title">Já possui uma conta ?</span>
+                <span class="subtitle">Entre agora !</span>
+                <button id="btnLogin" class="change">Entrar</button>
+            </div>
+    </main>
+  
+    <!--footer-->
+    <footer>
+        Desenvolvido por<span> Pedro Parro</span>
+    </footer>
+
+    <!--script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>    
+        
+</body>
+</html>

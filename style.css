@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+/*fontes*/
+@font-face{
+    font-family: "MuseoSans";
+    src: url("fontes/museosans.ttf") format("truetype");
+}
+/*fontes*/
+@font-face{
+    font-family: "FuturaPT";
+    src: url("fontes/FuturaPT.otf") format("opentype");
+}
+/*body*/
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+/*main*/
+main {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+/*header*/
+header{
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: MuseoSans;
+    font-size: 18px;
+    letter-spacing: 3px;
+    background: #006666;
+    position: relative;
+    z-index: 2;
+}
+header span {
+    color: rgb(253, 7, 7);
+    font-weight: bold;
+}
+div#subheader{
+    width: 100%;
+    display: block;
+    background: #21273d;
+    text-align: center;
+    height: 60px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+    position: relative;
+}
+
+div#mensagem{
+    padding: 15px 0;
+    font-family: MuseoSans;
+    color: #fff;
+    background: #ffc36b;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+}
+
+div#mensagem.red{
+    background: #F90055;
+}
+/*form main*/
+div#formulario{
+    width: 970px;
+    height: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: calc(-175px + 48px);
+    margin-left: -485px;
+    
+}
+div#formulario.cadastro{
+    height: 420px;
+    margin-top: calc(-210px + 48px);
+}
+/*back form*/
+div#formulario:after{
+    content: "";
+    position: absolute;
+    width: 1080px;
+    height: 200px;
+    top: 50px;
+    left: -50px;
+    background: #1c2133;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+div#formulario.cadastro:after{
+    height: 320px;
+}
+/*acesse sua conta*/
+div#formulario form{
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+    float: left;
+    background-color: #1c2133;
+}
+/*form crie sua conta*/
+div#formulario form#formularioCadastro{
+    display: none;
+    height: 420px;
+}
+
+div#formulario form span.title{
+    font-family: MuseoSans;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #5b5b68;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+div#formulario form div#linha{
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha label{
+    font-family: FuturaPT;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+div#formulario form div#linha input{
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    height: 11px;
+    padding: 15px 6px;
+    width: calc(100% - 16px);
+}
+
+div#formulario form div#button{
+    text-align: center;
+}
+
+div#formulario form div#button button{
+    margin-top: 12px;
+    font-family: MuseoSans;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 14px 40px;
+    background: #04348f;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+div#formulario.esqueci form div#button button{
+    margin-top: 50px;
+}
+
+div#formulario form div#button a{
+    display: block;
+    font-family: FuturaPT;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: #828282;
+}
+
+div#formulario div#textoLogin{
+    display: none;
+}
+/*formulario possui uma conta*/
+div#formulario div#textoCadastro,
+div#formulario div#textoLogin{
+    float: right;
+    width: 490px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+div#formulario div#textoCadastro span.title,
+div#formulario div#textoLogin span.title{
+    font-family: MuseoSans;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    color: #5b5b68;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+div#formulario div#textoCadastro span.subtitle,
+div#formulario div#textoLogin span.subtitle{
+    font-family: FuturaPT;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: #8c8c8c;
+}
+/*button*/
+div#formulario div#textoCadastro button,
+div#formulario div#textoLogin button{
+    margin-top: 30px;
+    font-family: MuseoSans;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 14px 20px;
+    background: #1c2133;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    padding: 8px 0;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: FuturaPT;
+    color: #1c2133;
+    background: #006666;
+}
+footer span {
+    color: #fff;
+    font-weight: bold;
+}
+/*RESPONSIVE*/
+/*380px*/
+@media only screen and (max-width: 380px) {
+    /*Header*/
+    header{
+        width: 100vw;
+        font-size: 13px;
+    }
+    /*faixa horizontal branca*/
+    div#formulario:after{
+      display: none;
+    }
+    /*form crie sua conta*/
+    div#formulario form#formularioCadastro{
+        display: none;
+        height: 420px;
+    }
+    /*formulario possui uma conta*/
+    div#formulario div#textoCadastro,
+    div#formulario div#textoLogin{
+        width: 100vw;
+        height: 250px;
+        margin-top: 2%;
+        margin-left: -50px;
+        background-color: #1c2133;
+        border-radius: 5px;
+    }
+    /*button*/
+    div#formulario div#textoCadastro button,
+    div#formulario div#textoLogin button{
+        margin-top: 30px;
+        color: #1c2133;
+        background: #fff;
+        margin-bottom: 100px;
+        font-weight: bold;
+    }
+    /*acesse sua conta*/
+    /*form main*/
+    div#formulario{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        position: relative;
+        margin-top: 10%;
+        margin-left: -48%;
+        display: block;
+    }
+    div#formulario.cadastro{
+        height: 420px;
+        margin-top: calc(-10px + 28px);
+    }
+
+}
